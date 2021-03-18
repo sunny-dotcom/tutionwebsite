@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Ubuntu' sans-serif;
+
+}
+
+
+
+nav .container{
+    height: 10vh;
+
+
+}
+
+nav .container .heading-side h2{
+    color: black;
+    font-family:'Ubuntu',sans-serif;
+    text-decoration: none;
+}
+nav .container .heading-side a{
+    text-decoration: none;
+}
+nav .container .heading-side h2 span{
+    color:#F50057;
+}
+
+nav .navitems ul li{
+    list-style: none;
+    /* text-decoration: none; */
+    
+}
+
+nav .navitems ul li a{
+    text-decoration: none;
+    padding: 12px;
+    font-size: 16px;
+    color: rgb(26, 24, 24);
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 520;
+}
+nav .navitems ul li a:hover{
+    color: #F50057;
+}
+
+nav .navitems button{
+
+    margin-left: 20px;
+
+}
+
+
+
+/* // home section styling begins here */
+
+
+.home .container{
+    height: 90vh;
+    /* align-items: center; */
+}
+
+.home .container .home-img {
+    height: 50%;
+    width: 50%;
+}
+.home .container .home-text{
+    margin-top: 12px;
+    height: 50%;
+    width: 50%;
+}
+.home .container .home-img img{
+    height: 100%;
+    width: 100%;
+    padding: 34px 134px;
+    background: rgb(211, 202, 202);
+    /* border-radius: 27% 73% 26% 74% / 100% 37% 63% 0% ; */
+    border-radius: 18% 82% 0% 100% / 86% 32% 68% 14% ;
+}
+
+.home .container .home-text h1{
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.home .container .home-text h1 span{
+    color: #F50057;
+    /* font-family: sans-serif; */
+
+}
+
+.home .container .home-text button{
+    margin-top: 19px
+    
+}

@@ -1,0 +1,40 @@
+.container{
+    width: 100%;
+    padding: 0 80px;
+    margin: 0 auto;
+
+    /* padding: 0 20px; */
+}
+
+.flex{
+    display: flex;
+
+
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+
+.btn-primary{
+    font-size: 15px;
+    font-family: 'Ubuntu' sans-serif;
+    color: white;
+    background: #F50057;
+    padding: 8px 14px;
+    outline: none;
+    border: 1px solid #F50057;
+    font-weight: 550;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px #F50057;
+    /* margin-bottom: 19px; */
+    /* margin-left: 20px; */
+    cursor: pointer
+}
+
+.btn-primary:hover{
+    background: #F50004;
+}
