@@ -7,11 +7,12 @@
 
     <!-- Bootstrap CSS -->
 
-    <title>Create the best future of your children | Aashatutorials.com</title>
+    <title>Aasha tutorials coaching classes | Aashatutorials.com</title>
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utilites.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -21,14 +22,15 @@
         <div class="heading-side">
             <a href="index.html"><h2>AASHA <span>TUTORIALS</span></h2></a>
         </div>
-        <div class="navitems flex align-center">
-            <ul class="flex">
+        <div class="navitems flex align-center justify-space-between">
+            <ul class="flex" id="ul">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Our Team</a></li>
             </ul>
+            <i class="fa fa-bars" id="togglebtn"></i>
             <button class="btn-primary">Sign In</button>
         </div>
         </div>
@@ -48,12 +50,38 @@
           </div>
         </div>
         <div class="home-img">
-          <img src="teacher.svg" alt="" srcset="">
+          <img src="teacher.svg">
 
         </div>
       </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script>
+      let togglebtn = document.getElementById('togglebtn');
+      togglebtn.addEventListener("click",function(){
+        let ul  = document.getElementById('ul');
+        console.log("you clicked togglebtn");
+        if(ul.style.left == '-100%'){
+          ul.style.left = '0';
+          togglebtn.className = "fa fa-times";
+
+
+        }
+        else{
+          console.log("bar is open");
+          ul.style.left = '-100%';
+          togglebtn.className = "fa fa-bars";
+        }
+
+      })
+
+      
+      
+      
+    </script>
   </body>
 </html>
+
+

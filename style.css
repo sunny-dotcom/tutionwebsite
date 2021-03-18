@@ -6,7 +6,9 @@
 
 }
 
-
+body{
+    overflow: hidden;
+}
 
 nav .container{
     height: 10vh;
@@ -40,6 +42,12 @@ nav .navitems ul li a{
     font-family: 'Ubuntu',sans-serif;
     font-weight: 520;
 }
+nav .navitems i{
+    font-size:21px;
+    display: none;
+    /* color: #F50057; */
+    margin-top: 4px;
+}
 nav .navitems ul li a:hover{
     color: #F50057;
 }
@@ -70,12 +78,15 @@ nav .navitems button{
     width: 50%;
 }
 .home .container .home-img img{
+    transform: scale(1.8);
+    /* position: absolute; */
     height: 100%;
     width: 100%;
-    padding: 34px 134px;
-    background: rgb(211, 202, 202);
+    /* padding: 34px 134px; */
+    /* background: rgb(218, 188, 188); */
     /* border-radius: 27% 73% 26% 74% / 100% 37% 63% 0% ; */
-    border-radius: 18% 82% 0% 100% / 86% 32% 68% 14% ;
+    background: white;
+    /* border-radius: 18% 82% 0% 100% / 86% 32% 68% 14% ; */
 }
 
 .home .container .home-text h1{
@@ -94,4 +105,118 @@ nav .navitems button{
 .home .container .home-text button{
     margin-top: 19px
     
+}
+
+
+
+@media only screen and (max-width:1024px){
+.home .home-img img{
+    /* height: 100%; */
+    /* width: 100%; */
+    /* transform: scale(1); */
+    /* border-radius: none; */
+    height:80%;
+    width: 80%;
+
+}
+
+nav .navitems i{
+    display: block;
+    font-size: 24px;
+    margin-right: 9px;
+    color: #F50057;
+}
+nav .navitems ul{
+    position: fixed;
+    height:100vh;
+    width: 100vw;
+    background: #F50057;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+nav .navitems ul li a{
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    margin-top: 34px;
+    /* background: white; */
+    font-size: 23px;
+}
+nav .navitems ul li a:hover{
+    color: #F50057;
+    background: white;
+}
+nav .heading-side h2{
+    font-size: 23px;
+    /* margin-top: 8px; */
+}
+
+
+}
+
+
+@media (max-width:720px){
+    nav .navitems button{
+        font-size: 8px;
+    }
+    .home .home-text button{
+        font-size: 8px;
+    }
+    nav.navitems h2{
+        font-size: 15px;
+    }
+    .home .home-img img{
+        /* border-radius: none; */
+        height: 60%;
+        width: 60%;
+        /* background: none; */
+    }
+
+    nav .navitems .home-img{
+        position: absolute;
+        top: 4px;
+        height: 100%;
+    }
+
+    .home .home-text h1{
+        font-size: 23px;
+    }
+    .navitems ul{
+        left: -500%;
+    }
+    .home .container{
+        height: 40vh;
+    }
+
+    img{
+        border: none;
+        background: #ffffff;
+        height: 200%;
+        width: 200%;
+    }
+    
+
+}
+
+@media (max-width:440px){
+    nav.navitems button{
+        font-size: 6px;
+        margin-right: 0;
+    }
+    nav .navitems h2{
+        font-size: 6px;
+    }
+    .navitems ul{
+        /* left: -500%; */
+        overflow: hidden;
+    }
+    .home .home-img img{
+        height: 40%;
+        width: 40%;
+    }
+     
 }

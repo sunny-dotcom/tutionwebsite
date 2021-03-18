@@ -38,3 +38,30 @@
 .btn-primary:hover{
     background: #F50004;
 }
+
+
+
+@media (max-width:1024px){
+    .container{
+        width: 100%;
+        padding: 0 60px;
+        margin: 0 auto;
+
+    }
+}
+
+@media (max-width:720px){
+    .container{
+        width: 100%;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:440px){
+     .container{
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+     }
+}
